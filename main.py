@@ -47,8 +47,8 @@ async def on_message(message):
 
     if message.content.startswith('$quote'):
       await message.channel.send(random.choice(quotes))
-
-    if any(word in channel.message = '@DotAs'):
+      
+    if message.content == '@DotAs':
       await message.channel.send(random.choice(dota_quotes))
 
 
